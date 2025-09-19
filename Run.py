@@ -336,7 +336,7 @@ class MAIN:
                         printf(f"\r                                 ", end='\r')
                         time.sleep(2.5)
             else:
-                printf(Panel(f"[bold red]Please fill in the TikTok video link correctly, make sure you take the video link in the browser!", width=56, style="bold bright_white", title="[bold bright_white][ Link Salah ]"))
+                printf(Panel(f"[bold red]Mohon isi link video TikTok dengan benar, pastikan anda mengambil link video di browser!", width=56, style="bold bright_white", title="[bold bright_white][ Link Salah ]"))
                 sys.exit()
         except Exception as e:
             printf(Panel(f"[bold red]{str(e).capitalize()}!", width=56, style="bold bright_white", title="[bold bright_white][ Error ]"))
@@ -352,7 +352,7 @@ class MAIN:
 [bold white]  /\_____\  \ \_____\  \ \_\    \ \_____\  \/\_____\ 
 [bold white]  \/_____/   \/_____/   \/_/     \/_____/   \/_____/
 
-        [underline green]Tiktok Auto Cuan - Devcode""", width=56, style="bold bright_white")
+        [underline green]Tiktok Auto Cuan - Rama Devcode""", width=56, style="bold bright_white")
         )
         return True
 
@@ -373,3 +373,4 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
 
         sys.exit()
+

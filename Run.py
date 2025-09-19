@@ -315,7 +315,7 @@ class MAIN:
             printf(Panel(f"[bold white]Silakan isi link video TikTok Anda, pastikan akun tidak diprivasi dan linknya benar. Ambil tautan link video melalui browser!", width=56, style="bold bright_white", title="[bold bright_white][ Link Video ]", subtitle="[bold bright_white]╭─────", subtitle_align="left"))
             video_url = Console().input("[bold bright_white]   ╰─> ")
             if 'tiktok.com' in str(video_url) or '/video/' in str(video_url):
-                printf(Panel(f"[bold white]You can use[bold green] CTRL + C[bold white] if stuck and use[bold red] CTRL + Z[bold white] if you want to stop. If views do not come\nin try running manually and run this program again!", width=56, style="bold bright_white", title="[bold bright_white][ Catatan ]"))
+                printf(Panel(f"[bold white]Anda bisa menggunakan[bold green] CTRL + C[bold white] Jika stuck Programnya [bold red] CTRL + Z[bold white] jika ingin berhenti. tampilan tidak muncul, coba jalankan secara manual dan jalankan program ini lagi!", width=56, style="bold bright_white", title="[bold bright_white][ Catatan ]"))
                 while True:
                     try:
                         if COOKIES['Cookie'] == None or len(COOKIES['Cookie']) == 0:
@@ -373,4 +373,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
 
         sys.exit()
+
 

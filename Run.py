@@ -312,7 +312,7 @@ class MAIN:
     def __init__(self) -> None:
         try:
             self.TAMPILKAN_LOGO()
-            printf(Panel(f"[bold white]Please fill in your tiktok video link, make sure the account is not private and the\nlink is correct. Take the video link via browser!", width=56, style="bold bright_white", title="[bold bright_white][ Link Video ]", subtitle="[bold bright_white]╭─────", subtitle_align="left"))
+            printf(Panel(f"[bold white]Silakan isi link video TikTok Anda, pastikan akun tidak diprivasi dan linknya benar. Ambil tautan link video melalui browser!", width=56, style="bold bright_white", title="[bold bright_white][ Link Video ]", subtitle="[bold bright_white]╭─────", subtitle_align="left"))
             video_url = Console().input("[bold bright_white]   ╰─> ")
             if 'tiktok.com' in str(video_url) or '/video/' in str(video_url):
                 printf(Panel(f"[bold white]You can use[bold green] CTRL + C[bold white] if stuck and use[bold red] CTRL + Z[bold white] if you want to stop. If views do not come\nin try running manually and run this program again!", width=56, style="bold bright_white", title="[bold bright_white][ Catatan ]"))
@@ -371,4 +371,5 @@ if __name__ == '__main__':
         printf(Panel(f"[bold red]{str(e).capitalize()}!", width=56, style="bold bright_white", title="[bold bright_white][ Error ]"))
         sys.exit()
     except KeyboardInterrupt:
+
         sys.exit()
